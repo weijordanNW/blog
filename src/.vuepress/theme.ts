@@ -1,19 +1,23 @@
 import { hopeTheme } from "vuepress-theme-hope";
 
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+// import { enNavbar, zhNavbar } from "./navbar/index.js";
+import {zhNavbar } from "./navbar/index.js";
+// import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "Mr.Hope",
+    name: "子冥",
     url: "https://mister-hope.com",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  // logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  // logo: './assets/img/comet.png',
+  logo: 'https://fanchens.github.io/vuepress/assets/img/comet.png',
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -53,7 +57,9 @@ export default hopeTheme({
       Youtube: "https://example.com",
       Zhihu: "https://example.com",
       VuePressThemeHope: {
-        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+        // icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+        icon: "https://fanchens.github.io/vuepress/assets/img/logo.png",
+        // icon: "./assets/img/logo.png",
         link: "https://theme-hope.vuejs.press",
       },
     },
@@ -62,10 +68,10 @@ export default hopeTheme({
   locales: {
     "/": {
       // navbar
-      navbar: enNavbar,
+      navbar: zhNavbar,
 
       // sidebar
-      sidebar: enSidebar,
+      sidebar: zhSidebar,
 
       footer: "Default footer",
 

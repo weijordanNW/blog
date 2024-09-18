@@ -9,7 +9,7 @@ export const enNavbar = navbar([
     prefix: "/posts/",
     children: [
       {
-        text: "Apple",
+        text: "苹果",
         icon: "pen-to-square",
         prefix: "apple/",
         children: [
@@ -41,7 +41,7 @@ export const enNavbar = navbar([
       { text: "Cherry", icon: "pen-to-square", link: "cherry" },
       { text: "Dragon Fruit", icon: "pen-to-square", link: "dragonfruit" },
       "tomato",
-      "strawberry",
+      "yuque",
     ],
   },
   {

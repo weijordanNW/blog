@@ -8,7 +8,6 @@ tag:
   - red
   - small
 ---
-
 # Strawberry
 
 ## Heading 2

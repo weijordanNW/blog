@@ -3,10 +3,10 @@ home: true
 layout: BlogHome
 icon: home
 title: 博客主页
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-heroText: 你博客的名称
+heroImage: https://fanchens.github.io/vuepress/assets/img/logo.png
+heroText: 子冥的博客
 heroFullScreen: true
-tagline: 你可以在这里放置你的口号与标语
+tagline: 这是一份计算机技术学习资料
 projects:
   - icon: project
     name: 项目名称
@@ -39,8 +39,8 @@ projects:
     link: https://你的自定义链接
 
 footer: 自定义你的页脚文字
----
 
+---
 这是一个博客主页的案例。
 
 要使用此布局，你应该在页面前端设置 `layout: BlogHome` 和 `home: true`。
