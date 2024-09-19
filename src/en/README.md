@@ -39,9 +39,10 @@ projects:
     link: https://你的自定义链接
 
 footer: 自定义你的页脚文字
+
 ---
-这是一个博客主页的案例。
+This is a blog home page demo.
 
-要使用此布局，你应该在页面前端设置 `layout: BlogHome` 和 `home: true`。
+To use this layout, you should set both `layout: BlogHome` and `home: true` in the page front matter.
 
-相关配置文档请见 [博客主页](https://theme-hope.vuejs.press/zh/guide/blog/home.html)。
+For related configuration docs, please see [blog homepage](https://theme-hope.vuejs.press/guide/blog/home.html).

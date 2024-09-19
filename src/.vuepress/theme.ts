@@ -1,11 +1,14 @@
 import { hopeTheme } from "vuepress-theme-hope";
-
-// import { enNavbar, zhNavbar } from "./navbar/index.js";
-import {zhNavbar } from "./navbar/index.js";
-// import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
+// import { enSidebar, zhSidebar } from "./sidebar/index.js";
+// import { enNavbar, zhNavbar } from "./navbar/index.js";
+
+// https://file.mo7.cc/api/public/bz
 
 export default hopeTheme({
+  // pure: true,//是否开启纯净模式。
+
   hostname: "https://mister-hope.github.io",
 
   author: {
@@ -16,14 +19,29 @@ export default hopeTheme({
   iconAssets: "fontawesome-with-brands",
 
   // logo: "https://theme-hope-assets.vuejs.press/logo.svg",
-  // logo: './assets/img/comet.png',
+  // logo: '/assets/img/comet.png',
   logo: 'https://fanchens.github.io/vuepress/assets/img/comet.png',
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  // repo: "vuepress-theme-hope/vuepress-theme-hope",//gitgub导航图标
+  repo: "https://github.com/weijordanNW/blog",//gitgub导航图标
 
   docsDir: "src",
 
+  // 导航栏
+  navbar: zhNavbar,
+  
+  // 侧边栏
+  sidebar: zhSidebar,
+
+   // 页脚
+  footer: "默认页脚",
+  displayFooter: true,
+
+  // 博客相关
   blog: {
+    description: "前端开发者,开源项目贡献者",
+    intro: "/intro.html",
+
     medias: {
       Baidu: "https://example.com",
       BiliBili: "https://example.com",
@@ -56,79 +74,118 @@ export default hopeTheme({
       Whatsapp: "https://example.com",
       Youtube: "https://example.com",
       Zhihu: "https://example.com",
+
       VuePressThemeHope: {
         // icon: "https://theme-hope-assets.vuejs.press/logo.svg",
         icon: "https://fanchens.github.io/vuepress/assets/img/logo.png",
         // icon: "./assets/img/logo.png",
         link: "https://theme-hope.vuejs.press",
       },
+      // timeline:"昨日不在", //时间轴的顶部文字。
+      // articlePerPage:10, //每页的文章数量。
+      // articleInfo:["Author", "Original", "Date", "PageView", "Category", "Tag", "ReadingTime"], //文章列表中展示的文章信息
+
     },
   },
+  // locales多语言配置
+  // locales: {
+  //   /**
+  //    * 中文配置
+  //    */
+  //   "/": {
+  //     // navbar
+  //     navbar: zhNavbar,
 
-  locales: {
-    "/": {
-      // navbar
-      navbar: zhNavbar,
+  //     // sidebar
+  //     sidebar: zhSidebar,
 
-      // sidebar
-      sidebar: zhSidebar,
+  //     footer: "默认页脚",
 
-      footer: "Default footer",
+  //     displayFooter: true,
 
-      displayFooter: true,
+  //     blog: {
+  //       description: "前端开发者,开源项目贡献者",
+  //       intro: "/zh/intro.html",
+  //     },
 
-      blog: {
-        description: "A FrontEnd programmer",
-        intro: "/intro.html",
-      },
+  //     // page meta
+  //     metaLocales: {
+  //       editLink: "在 GitHub 上编辑此页",
+  //     },
 
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
-    },
+  //     // enable RTL layout
+  //     // rtl: true,
+  //   },
 
-    /**
-     * Chinese locale config
-     */
-    "/zh/": {
-      // navbar
-      navbar: zhNavbar,
 
-      // sidebar
-      sidebar: zhSidebar,
+  //   /**
+  //    * 英文配置
+  //    */
+  //   "/en/": {
+//     // navbar
+  //     navbar: enNavbar,
 
-      footer: "默认页脚",
+  //     // sidebar
+  //     sidebar: enSidebar,
+  //     footer: "默认页脚",
+  //     displayFooter: true,
+  //     blog: {
+  //       description: "前端开发者,开源项目贡献者",
+  //       intro: "/intro.html",
+  //     },
+  //     // enable RTL layout
+  //     // rtl: true,
 
-      displayFooter: true,
+  //     // -------------------
+  //     // footer: "Default footer",
+  //     // displayFooter: true,
+  //     // blog: {
+  //     //   description: "A FrontEnd programmer",
+  //     //   intro: "/intro.html",
+  //     // },
+  //     // metaLocales: {
+  //     //   editLink: "Edit this page on GitHub",
+  //     // },
+  //   },
+  // },
 
-      blog: {
-        description: "一个前端开发者",
-        intro: "/zh/intro.html",
-      },
+  // page meta
+    // metaLocales: {
+    //   editLink: "在 GitHub 上编辑此页",
+    // },
 
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
-      },
-    },
-  },
-
+  // 加密配置
   encrypt: {
     config: {
+      "/demo/": ["1234"],
       "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
     },
+    // config: {
+    //   "/demo/encrypt.html": ["1234"],
+    //   "/zh/demo/encrypt.html": ["1234"],
+    // },
   },
 
-  // enable it to preview all changes in time
+   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,
 
+  fullscreen: true,//支持全屏
+
+  navbarLayout: {
+    start: ["Brand"],
+    center: ["Links"],
+    end: ["Language", "Repo", "Outlook", "Search"],
+  },
+  
+  // 在这里配置主题提供的插件
   plugins: {
     blog: true,
 
-    // Install @waline/client before enabling it
-    // Note: This is for testing ONLY!
-    // You MUST generate and use your own comment service in production.
+    // ----------
+    searchPro: true,//搜索框
+    
+    // 启用之前需安装 @waline/client
+    // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！
     // comment: {
     //   provider: "Waline",
     //   serverURL: "https://waline-comment.vuejs.press",
@@ -138,7 +195,7 @@ export default hopeTheme({
       components: ["Badge", "VPCard"],
     },
 
-    // These features are enabled for demo, only preserve features you need here
+    // 此处开启了很多功能用于演示，你应仅保留用到的功能。
     mdEnhance: {
       align: true,
       attrs: true,
@@ -171,46 +228,46 @@ export default hopeTheme({
       tasklist: true,
       vPre: true,
 
-      // install chart.js before enabling it
-      // chart: true,
+      // 在启用之前安装 chart.js
+      chart: true,
 
       // insert component easily
 
-      // install echarts before enabling it
+      // 在启用之前安装 echarts
       // echarts: true,
 
-      // install flowchart.ts before enabling it
+      // 在启用之前安装 flowchart.ts
       // flowchart: true,
 
       // gfm requires mathjax-full to provide tex support
       // gfm: true,
 
-      // install katex before enabling it
+      // 在启用之前安装 katex
       // katex: true,
 
-      // install mathjax-full before enabling it
+      // 在启用之前安装 mathjax-full
       // mathjax: true,
 
-      // install mermaid before enabling it
+      // 在启用之前安装 mermaid
       // mermaid: true,
 
       // playground: {
       //   presets: ["ts", "vue"],
       // },
 
-      // install reveal.js before enabling it
-      // revealJs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-      // },
+      // 在启用之前安装 reveal.js
+      revealJs: {
+        plugins: ["highlight", "math", "search", "notes", "zoom"],
+      },
 
-      // install @vue/repl before enabling it
+      // 在启用之前安装 @vue/repl
       // vuePlayground: true,
 
       // install sandpack-vue3 before enabling it
       // sandpack: true,
     },
 
-    // install @vuepress/plugin-pwa and uncomment these if you want a PWA
+    // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
     // pwa: {
     //   favicon: "/favicon.ico",
     //   cacheHTML: true,

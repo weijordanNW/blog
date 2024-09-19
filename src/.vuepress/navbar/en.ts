@@ -1,52 +1,63 @@
 import { navbar } from "vuepress-theme-hope";
 
 export const enNavbar = navbar([
-  "/",
-  "/demo/",
+  "/en/",
+  "/en/demo/",
   {
-    text: "Posts",
+    text: "技术笔记",
     icon: "pen-to-square",
-    prefix: "/posts/",
+    prefix: "/en/技术笔记/",
     children: [
       {
-        text: "苹果",
+        text: "前端",
         icon: "pen-to-square",
-        prefix: "apple/",
+        prefix: "前端/",
         children: [
-          { text: "Apple1", icon: "pen-to-square", link: "1" },
-          { text: "Apple2", icon: "pen-to-square", link: "2" },
-          "3",
-          "4",
+          { text: "HTML & CSS", icon: "pen-to-square", link: "1" },
+          { text: "JavaScript", icon: "pen-to-square", link: "2" },
+          { text: "Vue", icon: "pen-to-square", link: "3" },
+          { text: "React", icon: "pen-to-square", link: "4" },
+          // "3",
+          // "4",
         ],
       },
       {
-        text: "Banana",
+        text: "后端",
         icon: "pen-to-square",
-        prefix: "banana/",
+        prefix: "后端/",
         children: [
           {
-            text: "Banana 1",
+            text: "NodeJS",
             icon: "pen-to-square",
             link: "1",
           },
           {
-            text: "Banana 2",
+            text: "Express",
             icon: "pen-to-square",
             link: "2",
           },
-          "3",
-          "4",
+          {
+            text: "Linux",
+            icon: "pen-to-square",
+            link: "3",
+          },
+          {
+            text: "C",
+            icon: "pen-to-square",
+            link: "4",
+          },
+
         ],
       },
-      { text: "Cherry", icon: "pen-to-square", link: "cherry" },
-      { text: "Dragon Fruit", icon: "pen-to-square", link: "dragonfruit" },
-      "tomato",
-      "yuque",
+      { text: "语雀", icon: "pen-to-square", link: "yuque" },
+      { text: "GitHub", icon: "pen-to-square", link: "github" },
+      { text: "CSDN", icon: "pen-to-square", link: "csdn" },
+      { text: "Flow-us", icon: "pen-to-square", link: "flowus" },
     ],
   },
   {
-    text: "V2 Docs",
+    text: "V2 文档",
     icon: "book",
-    link: "https://theme-hope.vuejs.press/",
+    link: "https://theme-hope.vuejs.press/en/",
   },
 ]);
