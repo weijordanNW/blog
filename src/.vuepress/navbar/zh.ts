@@ -52,11 +52,11 @@ export const zhNavbar = navbar([
       { text: "Flow-us", icon: "pen-to-square", link: "flowus" },
     ],
   },
-  {
-    text: "V2 文档",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/",
-  },
+  // {
+  //   text: "V2 文档",
+  //   icon: "book",
+  //   link: "https://theme-hope.vuejs.press/",
+  // },
 
 
   "/demo/",

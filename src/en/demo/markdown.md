@@ -7,7 +7,6 @@ category:
 tag:
   - Markdown
 ---
-
 VuePress basically generate pages from Markdown files. So you can use it to generate documentation or blog sites easily.
 
 You should create and write Markdown files, so that VuePress can convert them to different pages according to file structure.
@@ -40,7 +39,7 @@ For these extensions, please read [Markdown extensions in VuePress](https://them
 
 ### Theme Enhancement
 
-By using [`vuepress-plugin-md-enhance`][md-enhance], the theme extends more Markdown syntax and provides richer writing functions.
+By using , the theme extends more Markdown syntax and provides richer writing functions.
 
 #### Code Tabs
 
@@ -93,7 +92,7 @@ Orange
 This text has footnote[^first].
 
 [^first]: This is footnote content
-
+    
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/content/footnote.html)
 
 #### Include files
@@ -113,7 +112,7 @@ $$
 
 #### Tasklist
 
-- [x] Plan A
+- [X] Plan A
 - [ ] Plan B
 
 [View Detail](https://theme-hope.vuejs.press/guide/markdown/grammar/tasklist.html)
@@ -132,7 +131,7 @@ Support setting color scheme and size.
 
 #### Component
 
-```component VPCard
+```component
 title: Mr.Hope
 desc: Where there is light, there is hope
 logo: https://mister-hope.com/logo.svg
@@ -230,96 +229,3 @@ Donate Mr.Hope a cup of coffee. _Recommended_
 #### Reveal.js
 
 <iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/revealjs.html" width="100%" height="400"/>
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/content/revealjs.html)
-
-#### Chart.js
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/chartjs.html" width="100%" height="450"/>
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/chart/chartjs.html)
-
-#### ECharts
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/echarts.html" width="100%" height="800"/>
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/chart/echarts.html)
-
-#### Flowchart
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/flowchart.html" width="100%" height="450"/>
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/chart/flowchart.html)
-
-#### MarkMap
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/markmap.html" width="100%" height="380"/>
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/chart/markmap.html)
-
-#### Mermaid
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/mermaid.html" width="100%" height="620"/>
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/chart/mermaid.html)
-
-#### PlantUML
-
-@startuml
-Alice -> Bob: Authentication Request
-
-alt successful case
-
-    Bob -> Alice: Authentication Accepted
-
-else some kind of failure
-
-    Bob -> Alice: Authentication Failure
-    group My own label
-    Alice -> Log : Log attack start
-        loop 1000 times
-            Alice -> Bob: DNS Attack
-        end
-    Alice -> Log : Log attack end
-    end
-
-else Another type of failure
-
-Bob -> Alice: Please repeat
-
-end
-@enduml
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/chart/plantuml.html)
-
-#### Code Demo
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/code-demo.html" width="100%" height="450"/>
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/code/demo.html)
-
-#### Playground
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/playground.html" width="100%" height="480"/>
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/code/playground.html)
-
-#### Kotlin Playground
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/kotlin-playground.html" width="100%" height="220"/>
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/code/kotlin-playground.html)
-
-#### Sandpack Playground
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/sandpack.html" width="100%" height="380"/>
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/code/sandpack.html)
-
-#### Vue Playground
-
-<iframe src="https://plugin-md-enhance-demo.vuejs.press/snippet/vue-playground.html" width="100%" height="380"/>
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/code/vue-playground.html)
-
-[md-enhance]: https://md-enhance.vuejs.press/

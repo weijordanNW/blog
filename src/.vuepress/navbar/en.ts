@@ -55,9 +55,9 @@ export const enNavbar = navbar([
       { text: "Flow-us", icon: "pen-to-square", link: "flowus" },
     ],
   },
-  {
-    text: "V2 文档",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/en/",
-  },
+  // {
+  //   text: "V2 文档",
+  //   icon: "book",
+  //   link: "https://theme-hope.vuejs.press/en/",
+  // },
 ]);
