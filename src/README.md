@@ -4,7 +4,7 @@ layout: BlogHome
 icon: home
 title: 主页
 bgImage : https://file.mo7.cc/api/public/bz
-heroImage: https://fanchens.github.io/vuepress/assets/img/logo.png
+heroImage: https://mister-hope.com/logo.svg
 heroText: Mr.子冥
 heroFullScreen: true
 tagline: Mr.子冥的Blog

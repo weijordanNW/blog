@@ -20,7 +20,8 @@ export default hopeTheme({
 
   // logo: "https://theme-hope-assets.vuejs.press/logo.svg",
   // logo: '/assets/img/comet.png',
-  logo: 'https://fanchens.github.io/vuepress/assets/img/comet.png',
+  // logo: 'https://fanchens.github.io/vuepress/assets/img/comet.png',
+  logo: 'https://mister-hope.com/logo.svg',
 
   // repo: "vuepress-theme-hope/vuepress-theme-hope",//gitgub导航图标
   repo: "https://github.com/weijordanNW/blog",//gitgub导航图标
@@ -187,10 +188,12 @@ export default hopeTheme({
     
     // 启用之前需安装 @waline/client
     // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！
-    // comment: {
-    //   provider: "Waline",
-    //   serverURL: "https://waline-comment.vuejs.press",
-    // },
+    // 评论部署
+    comment: {
+      provider: "Waline",
+      // serverURL: "https://waline-comment.vuejs.press",
+      serverURL: "https://blog-comment-two-ochre.vercel.app",
+    },
 
     components: {
       components: ["Badge", "VPCard"],
